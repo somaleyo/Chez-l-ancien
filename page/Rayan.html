@@ -7,16 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body class="bg-dark">
-    <section id="ancreRecette">
-      </section>
+<body id="ancreRecette" class="bg-dark">
     <header class="text-center fst-italic fw-bold text-white">
-        <h1>loot ta recette</h1>
+        <h1  >loot ta recette</h1>
     </header>
     <!-- nav -->
     <nav class="navbar navbar-expand-lg bg-white text-white">
         <div class="container-fluid">
-            <a class="navbar-brand text-dark" href="#">ta recette</a>
+            <a class="navabar-brand text-dark" href="#">ta recette</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,8 +42,160 @@
     </nav>
 
     <!-- carousel ... -->
-
-    <!-- Le reste de ton contenu... -->
-
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://mccormick.widen.net/content/cun9uvs3i6/original/supreme_de_poulet_aux_champignons_2000x1125.jpg" class="d-block w-100" alt="..." style="object-fit: contain;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/recipe_photos/original/229/couscous-poulet-merguez-AdobeStock_106871763.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel fin -->
+      <!-- cards  -->
+       <!-- speciales -->
+       <section>
+        <h1 class="text-white fst-italic text-center mx-0 my-5 p-2 bg-warning" >Nos specials</h1>
+       </section>
+       <section class="my-5 d-flex text-center justify-content-around">
+        <div class="card" style="width: 18rem;background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/recipe_photos/original/229/couscous-poulet-merguez-AdobeStock_106871763.jpg" class="card-img-top" alt="...">
+          <div class="card-body ">     
+            <h5 class="card-title">Couscous</h5>
+            <p class="card-text">Un couscous marocain traditionnel, simple à réaliser, qui constitue un excellent plat familial.  </p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+      
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pizza margherita</h5>
+            <p class="card-text">La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="https://www.recette360.com/wp-content/uploads/2020/10/Poulet-aux-champignons-vin-et-creme.jpg" class="card-img-top"  alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Poulet champignions</h5>
+            <p class="card-text">Poulet champignions accompagné de riz ou de pâte et la sauce du chef</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+          </div>
+        </div>
+      </section>
+      <!-- entrées -->
+      <section>
+        <h1 class="text-white fst-italic text-center fw-bold mx-0 my-5 p-2 bg-warning">Nos entrées</h1>
+      </section>
+      
+      
+      <section class="my-5 d-flex text-center justify-content-around">
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2 ">Voir la recette</a>
+          </div>
+        </div>
+      </section>
+      <!-- dessert -->
+      <section>
+        <h1 class="text-white fst-italic text-center mx-0 my-5 p-2 bg-warning"> Nos Desserts </h1>
+      </section>
+      
+      
+      <section class="my-5 d-flex text-center justify-content-around">
+      
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="https://i1.wp.com/www.modernhoney.com/wp-content/uploads/2017/06/DSC_0122-copy.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="https://www.galbani.fr/wp-content/uploads/2018/10/mon-tiramisu.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+          <img src="https://recettes.campina.be/data/recipe/img1_Dameblanchevanversgedraaidijs.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">voir la recette</a>
+          </div>
+        </div>
+      </section>
+      <!-- CARD FIN -->
+    <footer class="mt-5"  style="background-color: gray;">
+        <section class="d-flex justify-content-around">
+         <hr>
+         
+         <H4>Suivez nous</H3>
+         <div>
+         <ul>
+         <li><a href="https://www.facebook.com/">Facebook</a></li>
+         <li><a href="">Instagram</a></li>
+         <li><a href="">X</a></li>
+         </ul>
+         </div>
+         <div>
+         <H4>Contactez</H3>
+         <H5>Restaurant chez l'ancien</H5>
+         <p>Rue des poitier 13 1070 Anderlecht</p>
+         <P>0495869594</P>
+         </div>
+         <div>
+         <H4>Payer nous</H3>
+         <ul>
+         <li>Nos promos</li>
+         <li>Nos Tarifs</li>
+         <li>Acces premium</li>
+         </ul>
+         </div>
+       </section>
+         <p class="text-center"> site protege par la loi sur le copyrights de 1922</p>
+       
+         </footer>
 </body>
 </html>
