@@ -1,239 +1,215 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/styles-Rayan.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Restaurant chez l'ancien</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
-<body class="corps">
-<header><h1 id="titrepages">Loots Ton Actus</h1></header>
 
-<!-- nav bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black mb-4">
-  <div class="container-fluid">
-      <a class="navbar-brand text-white" href="#">MENU</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
+<body class="bg-dark">
+  <header class="text-center fst-italic fw-bold text-white" >
+    <h1>Restaurant chez l'ancien</H1>
+  </header>
+  <!-- nav  -->
+   
+      <!-- nav  -->
+      <nav class=" navbar navbar-expand-lg bg-white text-white">
+        <div class="container-fluid">
+          <a class="navbar-brand text-dark" href="#">Chez l'ancien</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                  <a class="nav-link text-white active" aria-current="page" href="#">Accueil</a>
+                <a class="nav-link active text-dark" aria-current="page" href="#Home">Home</a>
               </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Jetez un oeil
-                  </a>
-                  <ul class="dropdown-menu bg-dark">
-                      <li><a class="dropdown-item text-primary" href="#meilleur-actus">Meilleures actus</a></li>
-                      <li><a class="dropdown-item text-primary" href="#actus">Actus</a></li>
-                      <li><hr class="dropdown-divider bg-primary"></li>
-                      <li><a class="dropdown-item text-primary" href="#suivre">Nous suivre</a></li>
-                  </ul>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Nos Classiques</a>
               </li>
-          </ul>
-          <form class="d-flex ms-auto">
-              <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
-              <button class="btn btn-outline-primary text-white" type="submit">Recherche</button>
-          </form>
-      </div>
-  </div>
-</nav>
-<!-- nav bar -->
+              <li class="nav-item dropdown text-dark">
+                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Le Menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li ><a class="text-dark dropdown-item" href="#">Nos Classiques</a></li>
+                  <li><a class="text-dark dropdown-item" href="#">Nos Entrées</a></li>
+                  <li><a class="text-dark dropdown-item" 
+                    href="#">Nos desserts</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
 
-<!-- premiere grosse actu -->
-<div class="card text-bg-dark">
-    <img class="images1" src="./assets/img/istockphoto-1334436084-612x612 (1).jpg" class="card-img" alt="...">
-    <div class="card-img-overlay">
-      <h5 class="card-title m-5 ms-5">Records Gaming : le jeu vidéo le mieux noté de l’histoire</h5>
-      <p class="card-text m-5 ms-5" style="max-width: 600px; margin: 0 auto;">"Ocarina of Time", pionnier du monde ouvert, a introduit des mécaniques innovantes, comme le verrouillage des ennemis et un cycle jour/nuit influençant les interactions. L'ocarina, instrument clé du jeu, permet de voyager dans le temps. Plus de 25 ans après sa sortie, le jeu reste une référence, avec des produits dérivés, des découvertes et des techniques de speedrun. Malgré l'évolution du gaming, son score sur Metacritic n'a toujours pas été égalé.</p>
-      <p class="card-text"><small></small></p>
-      <div class="card-footer">
-      </div>
-      <!-- Bouton 'Voir plus' -->
-      <a href="./pages/page1.html" class="btn m-5 ms-5 mt-1">
-          <small>Voir plus</small>
-      </a>
+<!-- NAV BAR FIN -->
+<!-- carousel  -->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://mccormick.widen.net/content/cun9uvs3i6/original/supreme_de_poulet_aux_champignons_2000x1125.jpg" class="d-block w-100" alt="..." style="object-fit: contain;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/recipe_photos/original/229/couscous-poulet-merguez-AdobeStock_106871763.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-<!-- premiere grosse actu -->
+<!-- carousel fin -->
+<!-- cards  -->
+ <!-- speciales -->
+ <section>
+  <h1 class="text-white fst-italic text-center mx-0 my-5 p-2 bg-warning" >Nos specials</h1>
+ </section>
+ <section class="my-5 d-flex text-center justify-content-around">
+  <div class="card" style="width: 18rem;background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="https://s3-eu-west-1.amazonaws.com/images-ca-1-0-1-eu/recipe_photos/original/229/couscous-poulet-merguez-AdobeStock_106871763.jpg" class="card-img-top" alt="...">
+    <div class="card-body ">     
+      <h5 class="card-title">Couscous</h5>
+      <p class="card-text">Un couscous marocain traditionnel, simple à réaliser, qui constitue un excellent plat familial.  </p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
 
-<!-- Cards -->
-<section class="cards">
- <div class="row row-cols-1 row-cols-md-3 g-3 mb-5">
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/f80ff32e08a25270b5f252ce39522f72-1739793272.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title color-primary text-white">Rainbow Six Siege: Ubisoft dévoile "Siege X"</h5>
-          <p class="card-text">Ubisoft a dévoilé ce 16 février le futur de la licence "Rainbow Six Siege", le jeu vidéo de tir tactique. Intitulé "Siege X", le studio promet "la plus grande transformation de l’histoire du jeu".</p>
-        </div>
-        <div class="card-footer">
-            <!-- Bouton 'Voir plus' -->
-            <a href="./pages/page2.html" class="btn">
-              <small>Voir plus</small>
-            </a>
-        </div>
-      </div>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/cb2077.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title card-title color-primary text-white">Cyberpunk 2077 atteint les 30 millions d'exemplaires écoulés</h5>
-          <p class="card-text">Le rapport financier trimestriel de CDProjekt dévoile de beaux chiffres pour son dernier jeu et son extension. Pas aussi beaux que ceux de The Witcher 3, sa précédente tentative, mais suffisamment importants pour être notés.</p>
-        </div>
-        <div class="card-footer">
-          <!-- Bouton 'Voir plus' -->
-          <a href="./pages/page3.html" class="btn">
-            <small>Voir plus</small>
-          </a>
-        </div>
-      </div>
+  </div>
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="https://www.foodandwine.com/thmb/Wd4lBRZz3X_8qBr69UOu2m7I2iw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pizza margherita</h5>
+      <p class="card-text">La pizza margherita est une spécialité culinaire traditionnelle de la ville de Naples, en Italie.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
     </div>
-    <div class="col">
-      <div class="card h-100">
-        <img src="./assets/img/pages4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title color-primary text-white">Cet éditeur réaffirme son engagement dans l’IA, la VF de ce jeu vidéo réputé est en grand danger !</h5>
-          <p class="card-text">Cet éditeur réaffirme son engagement dans l’IA, la VF de ce jeu vidéo réputé est en grand danger !</p>
-        </div>
-        <div class="card-footer">
-          <!-- Bouton 'Voir plus' -->
-          <a href="./pages/page4.html" class="btn">
-            <small>Voir plus</small>
-          </a>
-        </div>
-      </div>
+  </div>
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="https://www.recette360.com/wp-content/uploads/2020/10/Poulet-aux-champignons-vin-et-creme.jpg" class="card-img-top"  alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Poulet champignions</h5>
+      <p class="card-text">Poulet champignions accompagné de riz ou de pâte et la sauce du chef</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
     </div>
-    
   </div>
 </section>
-<section class="cards">
-  <div class="row row-cols-1 row-cols-md-3 g-3 mb-5">
-     <div class="col">
-       <div class="card h-100">
-         <img src="./assets/img/page5.jpg" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title color-primary text-white">Elden Ring Nightreign : date de sortie, trailer, toutes les infos sur le spin-off en coopération</h5>
-           <p class="card-text">Elden Ring Nightreign prevue sur PC, PS4, PS5, Xbox One et Xbox Series sortira le </p>
-         </div>
-         <div class="card-footer">
-             <!-- Bouton 'Voir plus' -->
-             <a href="./pages/page5.html" class="btn">
-               <small>Voir plus</small>
-             </a>
-         </div>
-       </div>
-     </div>
-     <div class="col">
-       <div class="card h-100">
-         <img src="./assets/img/page6.png" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title card-title color-primary text-white">Assassin’s Creed Shadows : Ubisoft réagit aux leaks de son prochain jeu vidéo</h5>
-           <p class="card-text">À un mois de la sortie d'Assassin's Creed Shadows, des copies physiques du jeu auraient déjà circulé,</p>
-         </div>
-         <div class="card-footer">
-           <!-- Bouton 'Voir plus' -->
-           <a href="./pages/page6.html" class="btn">
-             <small>Voir plus</small>
-           </a>
-         </div>
-       </div>
-     </div>
-     <div class="col">
-       <div class="card h-100">
-         <img src="./assets/img/pages4.jpg" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title color-primary text-white">Cet éditeur réaffirme son engagement dans l’IA, la VF de ce jeu vidéo réputé est en grand danger !</h5>
-           <p class="card-text">Cet éditeur réaffirme son engagement dans l’IA, la VF de ce jeu vidéo réputé est en grand danger !</p>
-         </div>
-         <div class="card-footer">
-           <!-- Bouton 'Voir plus' -->
-           <a href="./pages/page4.html" class="btn">
-             <small>Voir plus</small>
-           </a>
-         </div>
-       </div>
-     </div>
-     
-   </div>
- </section>
- <section class="cards">
-  <div class="row row-cols-1 row-cols-md-3 g-3 mb-5">
-     <div class="col">
-       <div class="card h-100">
-         <img src="./assets/img/f80ff32e08a25270b5f252ce39522f72-1739793272.jpg" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title color-primary text-white">Rainbow Six Siege: Ubisoft dévoile "Siege X"</h5>
-           <p class="card-text">Ubisoft a dévoilé ce 16 février le futur de la licence "Rainbow Six Siege", le jeu vidéo de tir tactique. Intitulé "Siege X", le studio promet "la plus grande transformation de l’histoire du jeu".</p>
-         </div>
-         <div class="card-footer">
-             <!-- Bouton 'Voir plus' -->
-             <a href="./pages/page2.html" class="btn">
-               <small>Voir plus</small>
-             </a>
-         </div>
-       </div>
-     </div>
-     <div class="col">
-       <div class="card h-100">
-         <img src="./assets/img/cb2077.jpg" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title card-title color-primary text-white">Cyberpunk 2077 atteint les 30 millions d'exemplaires écoulés</h5>
-           <p class="card-text">Le rapport financier trimestriel de CDProjekt dévoile de beaux chiffres pour son dernier jeu et son extension. Pas aussi beaux que ceux de The Witcher 3, sa précédente tentative, mais suffisamment importants pour être notés.</p>
-         </div>
-         <div class="card-footer">
-           <!-- Bouton 'Voir plus' -->
-           <a href="./pages/page3.html" class="btn">
-             <small>Voir plus</small>
-           </a>
-         </div>
-       </div>
-     </div>
-     <div class="col">
-       <div class="card h-100">
-         <img src="./assets/img/pages4.jpg" class="card-img-top" alt="...">
-         <div class="card-body">
-           <h5 class="card-title color-primary text-white">Cet éditeur réaffirme son engagement dans l’IA, la VF de ce jeu vidéo réputé est en grand danger !</h5>
-           <p class="card-text">Cet éditeur réaffirme son engagement dans l’IA, la VF de ce jeu vidéo réputé est en grand danger !</p>
-         </div>
-         <div class="card-footer">
-           <!-- Bouton 'Voir plus' -->
-           <a href="./pages/page4.html" class="btn">
-             <small>Voir plus</small>
-           </a>
-         </div>
-       </div>
-     </div>
-     
-   </div>
- </section>
+<!-- entrées -->
+<section>
+  <h1 class="text-white fst-italic text-center fw-bold mx-0 my-5 p-2 bg-warning">Nos entrées</h1>
+</section>
+
+
+<section class="my-5 d-flex text-center justify-content-around">
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2 ">Voir la recette</a>
+    </div>
+  </div>
+</section>
+<!-- dessert -->
+<section>
+  <h1 class="text-white fst-italic text-center mx-0 my-5 p-2 bg-warning"> Nos Desserts </h1>
+</section>
+
+
+<section class="my-5 d-flex text-center justify-content-around">
+
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="https://i1.wp.com/www.modernhoney.com/wp-content/uploads/2017/06/DSC_0122-copy.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="https://www.galbani.fr/wp-content/uploads/2018/10/mon-tiramisu.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">Voir la recette</a>
+    </div>
+  </div>
+  <!-- change la photo de dame blanche rsp -->
+  <div class="card" style="width: 18rem; background-color: rgba(153, 181, 191, 0.905); color: black;">
+    <img src="https://recettes.campina.be/data/recipe/img1_Dameblanchevanversgedraaidijs.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-warning text-white fst-italic text-center mx-0 my-2 p-2">voir la recette</a>
+    </div>
+  </div>
+</section>
+<!-- CARD FIN -->
  
+<footer class="mt-5"  style="background-color: gray;">
+ <section class="d-flex justify-content-around">
+  <hr>
+  
+  <H4>Suivez nous</H3>
+  <div>
+  <ul>
+  <li><a href="https://www.facebook.com/">Facebook</a></li>
+  <li><a href="">Instagram</a></li>
+  <li><a href="">X</a></li>
+  </ul>
+  </div>
+  <div>
+  <H4>Contactez</H3>
+  <H5>Restaurant chez l'ancien</H5>
+  <p>Rue des poitier 13 1070 Anderlecht</p>
+  <P>0495869594</P>
+  </div>
+  <div>
+  <H4>Payer nous</H3>
+  <ul>
+  <li>Nos promos</li>
+  <li>Nos Tarifs</li>
+  <li>Acces premium</li>
+  </ul>
+  </div>
+</section>
+  <p class="text-center"> site protege par la loi sur le copyrights de 1922</p>
 
-<!-- Footer -->
-<div class="container my-5">
-  <footer class="bg-dark text-center text-white">
-    <div class="container p-4 pb-0">
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" role="button"><i class="fab fa-facebook-f">Facebook</i></a>
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" role="button"><i class="fab fa-twitter">Twitter</i></a>
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" role="button"><i class="fab fa-instagram">Instagram</i></a>
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com" role="button"><i class="fab fa-linkedin-in">Linkedin</i></a>
-      </section>
-    </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2025 Copyright: <a class="text-white" href="#">Loots Ton Actus</a>
-    </div>
   </footer>
-</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-1c6c8c9135abf57dd5878a4d21c089ea8cc25e3eab1ef8ac08eb0c5cf11b57445" crossorigin="anonymous"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
